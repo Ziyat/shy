@@ -2,8 +2,12 @@ require 'yaml'
 require 'fileutils'
 
 domains = {
+<<<<<<< HEAD
   frontend: 'shy.local',
   backend:  'backend.shy.local',
+=======
+  public_html: 'shy.local',
+>>>>>>> 4d37ae317d360bc19a9fb02ad0bfc41f541eb693
 }
 config = {
   local: './vagrant/config/vagrant-local.yml',
@@ -47,8 +51,13 @@ Vagrant.configure(2) do |config|
   # network settings
   config.vm.network 'private_network', ip: options['ip']
 
+<<<<<<< HEAD
   # sync: folder 'yii2-app-advanced' (host machine) -> folder '/app' (guest machine)
   config.vm.synced_folder './', '/app', owner: 'vagrant', group: 'vagrant'
+=======
+  # sync: folder 'yii2-app-basic' (host machine) -> folder '/app' (guest machine)
+  config.vm.synced_folder './../', '/app', owner: 'vagrant', group: 'vagrant'
+>>>>>>> 4d37ae317d360bc19a9fb02ad0bfc41f541eb693
 
   # disable folder '/vagrant' (guest machine)
   config.vm.synced_folder '.', '/vagrant', disabled: true
@@ -68,5 +77,9 @@ Vagrant.configure(2) do |config|
   config.vm.provision 'shell', path: './vagrant/provision/always-as-vagrant.sh', run: 'always', privileged: false
 
   # post-install message (vagrant console)
+<<<<<<< HEAD
   config.vm.post_up_message = "Frontend URL: http://#{domains[:frontend]}\nBackend URL: http://#{domains[:backend]}"
+=======
+  config.vm.post_up_message = "public_html URL: http://#{domains[:public_html]}"
+>>>>>>> 4d37ae317d360bc19a9fb02ad0bfc41f541eb693
 end
