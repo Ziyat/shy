@@ -1,0 +1,539 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Calypso - HTML Responsive Theme</title>
+	
+	<meta name="description" content="Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!">
+	<meta name="author" content="WowThemes.net">
+	<meta name="copyright" content="WowThemes.net">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-03-27T00:00:00+02:00">	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">	
+	<script src="js/jquery.1.6.4.js"></script>	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushJScript.js"></script>	
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/logo.png);}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="http://www.wowthemes.net" id="documenter_logo"></a>
+		<ol id="documenter_nav" style="margin-top:-30px;">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#html_structure">HTML Structure</a></li>
+			<li><a href="#css_files_and_structure">Change Color Schemes & Layouts</a></li>
+			<li><a href="#bgheader">Change Background & Header Images</a></li>
+			<li><a href="#menu">Menu</a></li>
+			<li><a href="#carouselslider">Carousel Slider</a></li>
+			<li><a href="#portfolio">Filterable Portfolio</a></li>			
+			<li><a href="#carousel">Carousel List</a></li>
+			<li><a href="#animations">Animations</a></li>
+			<li><a href="#contact">Contact Forms</a></li>			
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+			<li><a href="#support">Theme Support</a></li>
+			<li><a href="http://www.wowthemes.net/themes/tag/bootstrap/">More Bootstrap Themes</a></li>
+			<li><a href="http://www.wowthemes.net/category/free-themes-templates/">Free Themes</a></li>
+		</ol>
+		<div id="documenter_copyright">Copyright WowThemes.net 2015 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Calypso</h1><h2>Responsive HTML Template</h2><hr><ul><li>By: WowThemes.net</li><li><a href=""></a></li><li>Email: <a href="mailto:wowthemesnet@gmail.com">wowthemesnet@gmail.com</a></li></ul>. <p>Thank you for purchasing our theme. If you have any questions, please feel free to email us! </p></section><section id="html_structure">
+	<h3>HTML Structure</h3><hr class="notop">
+<p>For a simple two column layout, create a <B>.row</B> and add the appropriate number of .col-md* columns. As this is a 12-column grid, each .col-md* spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).Everything is wrapped within the <b>.container</b> class.</p>
+
+<p>Example:</p>
+<pre class="brush: css">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			Main content here
+		</div>
+		<div class="col-md-4">
+			Sidebar here
+		</div> 
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			Half column here
+		</div>
+		<div class="col-md-6">
+			Other half here
+		</div> 
+	</div>
+</div>
+</pre> 
+<p>Our document "columns.html" is useful if you want to see more of these 12 columns variations, but here's an illustrative example.</p>
+<p><img alt="" src="assets/images/grid.png"></p>
+<p>&nbsp;</p>
+</section>
+
+<section id="css_files_and_structure">
+	<h3>CSS Files and Structure</h3><hr class="notop">
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px; -webkit-text-size-adjust: none; ">There are four main CSS files used in theme.&nbsp; </span></p>
+
+<ol style="margin-top: 18px; margin-right: 0px; margin-bottom: 18px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56); -webkit-text-size-adjust: none; border-style: initial; border-color: initial; ">
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">bootstrap.css</strong>&nbsp;-&nbsp; (the original bootstrap stylesheet);</li>
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">style.css</strong>&nbsp;-&nbsp; (custom stylesheet for our theme);</li>
+  
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">responsive.css</strong>&nbsp;- stylesheet for responsive layout.</li>
+		
+	<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">layout-semiboxed.css</strong>&nbsp; (current layout for this theme)</li>
+	
+		<li style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 36px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style-type: decimal; list-style-position: initial; list-style-image: initial; border-style: initial; border-color: initial; ">
+		<strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-image: initial; outline-width: 0px; outline-style: initial; outline-color: initial; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline; border-style: initial; border-color: initial; ">skin-red.css</strong>&nbsp; (current skin for this theme)</li>
+	
+</ol>
+<p>It is important that you keep the order of the stylesheet files in header as shown in our theme</p>
+
+<p style="text-decoration:underline;">How to change color skin</p>
+	<p>In order to change the color skin, replace <b>skin-red.css</b> in all of the files (in head) with the skin color of your choice from <b>css/</b> folder.</p>
+	<p>Example,if you choose the green skin, replace:</p>
+	<pre class="brush:css"><link rel="stylesheet" href="css/skin-red.css"></pre>
+	with
+	<pre class="brush:css"><link rel="stylesheet" href="css/skin-green.css"></pre>	
+	
+
+
+
+<p style="text-decoration:underline;">How to change your theme layout</p>
+<p>In order to change the theme layout, replace <b>layout-semiboxed.css</b> in all of the files (in head) with a theme layout of your choice from <b>css/</b> folder (layout-boxed or layout-wide).</p>
+	<p>Example,if you choose the boxed layout, replace:</p>
+	<pre class="brush:css"><link rel="stylesheet" href="css/layout-semiboxed.css"></pre>
+	with
+	<pre class="brush:css"><link rel="stylesheet" href="css/layout-boxed.css"></pre>	
+
+	
+	<section id="bgheader">
+	<h3>Backgrounds & Page Headers</h3><hr class="notop">
+<p style="text-decoration:underline;">How to change your background</p>
+<p>Background images can be used only in boxed layout mode. Go to css/layout-boxed.css, line 1, and change the filename.
+Example, if you choose an image for the background called "ducks", instead of
+<pre class="brush:css">
+body {background:#fff url(../img/demo/16.jpg);}
+</pre>
+
+change to
+
+<pre class="brush:css">
+body {background:#fff url(../img/demo/ducks.jpg);
+</pre>
+
+Of course, we assume there already is a filename called ducks in img/demo/ folder. If not, upload it or change folder's path.
+
+<p style="text-decoration:underline;">How to change your header image</p>
+<p>Go to style.css and find the .pageheader-default class:</p>
+<pre class="brush:css">
+.pageheader-default {
+	background:url(../img/demo/3.jpg);
+}
+</pre>
+Replace the same way as shown above for body background.
+
+
+</section>
+
+
+<section id="menu">
+	<h3>Menu</h3><hr class="notop">
+	<p style="text-transform:uppercase;"><b> Structure</b></p>
+<pre class="brush:css">
+<ul id="nav" class="nav navbar-nav pull-right">
+			<li><a href="index.html">Home</a></li>
+			<li class="dropdown active">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
+			<ul class="dropdown-menu">
+				<li><a href="home2.html">Home Alt</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="timeline.html">Timeline</a></li>
+				<li><a href="landingpage.html">Landing Page</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="faq.html">F.A.Q.</a></li>
+				<li><a href="404.html">404 Not Found</a></li>
+			</ul>
+			</li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <i class="icon-angle-down"></i></a>
+			<ul class="dropdown-menu">
+				<li><a href="portfolio3.html">Three Columns</a></li>
+				<li><a href="portfolio2.html">Two Columns</a></li>
+				<li><a href="portfolio4.html">Four Columns</a></li>
+				<li><a href="projectdetail.html">Single Project</a></li>
+			</ul>
+			</li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <i class="icon-angle-down"></i></a>
+			<ul class="dropdown-menu">
+				<li><a href="blogindex.html">Home Blog</a></li>
+				<li><a href="blogsinglepost.html">Single Post</a></li>
+			</ul>
+			</li>
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <i class="icon-angle-down"></i></a>
+			<ul class="dropdown-menu">
+				<li><a href="elements.html">Elements</a></li>
+				<li><a href="columns.html">Columns</a></li>
+				<li><a href="icons.html">Icons</a></li>
+				<li><a href="#">Masonry Grids +</a>
+				<ul class="dropdown-menu sub-menu">
+					<li><a href="masonry2.html">Masonry Two</a></li>
+					<li><a href="masonry3.html">Masonry Three</a></li>
+					<li><a href="masonry4.html">Masonry Four</a></li>
+				</ul>
+				</li>
+			</ul>
+			</li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+</pre>
+
+
+<p style="text-transform:uppercase;"><b> Dropdown Item</b></p>
+<pre class="brush:css">
+<li class="dropdown">
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <i class="icon-angle-down"></i></a>
+	<ul class="dropdown-menu">
+		<li><a href="portfolio3.html">Three Columns</a></li>
+		<li><a href="portfolio2.html">Two Columns</a></li>
+		<li><a href="portfolio4.html">Four Columns</a></li>
+		<li><a href="projectdetail.html">Single Project</a></li>
+	</ul>
+</li>
+</pre>
+
+<p style="text-transform:uppercase;"><b> Submenu Item</b></p>
+<pre class="brush:css">
+<li><a href="#">Masonry Grids +</a>
+	<ul class="dropdown-menu sub-menu">
+		<li><a href="masonry2.html">Masonry Two</a></li>
+		<li><a href="masonry3.html">Masonry Three</a></li>
+		<li><a href="masonry4.html">Masonry Four</a></li>
+	</ul>
+</li>
+</pre>
+
+<p style="text-transform:uppercase;"><b> Set Active Class</b></p>
+<pre class="brush:css">
+<li class="active"><a href="index.html">Home</a></li>
+</pre>
+<p>"Home" item will be now highlighted in menu.</p>
+</section>
+
+<section id="carouselslider">
+	<h3>Carousel Slider</h3><hr class="notop">
+
+<pre class="brush:css">
+<div class="carousel carousel-fade slide carousel-featuredwork" id="carousel-featuredwork">
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-featuredwork" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-featuredwork" data-slide-to="1" class=""></li>
+		<li data-target="#carousel-featuredwork" data-slide-to="2" class=""></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="img/demo/projectdetail3.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="img/demo/projectdetail1.jpg" alt="">
+		</div>
+		<div class="item">
+			<img src="img/demo/projectdetail2.jpg" alt="">
+		</div>
+	</div>
+</div>
+</pre>
+</section>
+
+<p class="info">More about Bootstrap's Carousel: http://getbootstrap.com/javascript/#carousel</p>
+
+<section id="portfolio">
+	<h3>Portfolio</h3><hr class="notop">
+	
+	
+<p style="text-transform:uppercase;"><b> Structure</b></p>
+<pre class="brush:css">
+<div class="boxportfolio3 cat2 cat3">
+	<div class="boxcontainer">
+		<img src="img/dummyimage.jpg" alt="">
+		<div class="roll">
+			<div class="wrapcaption">
+				<a href="singleproject.html"><i class="icon-link captionicons"></i></a>
+				<a data-gal="prettyPhoto[gallery1]" href="img/dummyimage.jpg" title="Title Here"><i class="icon-zoom-in captionicons"></i></a>
+			</div>
+		</div>
+		<h1><a href="singleproject.html">Title</a></h1>
+		<p>
+			 short descr.
+		</p>
+	</div>
+</div>
+</pre>
+	
+<p class="info">
+What to do: 
+Line 1 - replace/add your categories (cat1 cat3). See below for more details<br>
+Line 3 and Line 6 - replace img/dummyimage.jpg with your own image path<br>
+Line 6 and Line 10- replace singleproject.html with the link to your project single<br>
+Line 10 - replace your title<br>
+Line 12 - a very short description<br>
+</p>	
+	
+<p class="info">
+ABOUT THE FILTERING<br/>
+You have noticed above, line 1, "cat2 cat3". These are the categories of items, as defined in the filter navigation. See below the filter navigation as found in our theme, too:
+</p>	
+
+<pre class="brush:css">
+<div id="filter">
+	<ul>
+		<li><a href="" data-filter="*" class="selected"><i class="icon icon-reorder"></i> All Items</a></li>
+		<li><a href="" data-filter=".cat1"><i class="icon icon-th-large"></i> Landscape</a></li>
+		<li><a href="" data-filter=".cat2"><i class="icon icon-th-list"></i> Overview</a></li>
+		<li><a href="" data-filter=".cat3"><i class="icon icon-th"></i> Green Nature</a></li>
+	</ul>
+</div>
+</section>
+</pre>
+
+<p>
+So, add <b>cat1</b> if for example you want your item to appear when you click on Landscape. Or <b>cat3</b> for Green Nature click. Or <b>cat1 cat3</b> for both etc.
+</p>
+	
+
+
+<section id="carousel">
+     <h3>Carousel</h3><hr class="notop">
+
+<p>In our theme the carousel plugin is used as an example in elements.html file & index.html.<br/>
+ 
+ 
+<p>Structure:</p>
+<pre class="brush:css">
+<div class="row">
+	<div class="col-md-12">
+		<h1 class="title text-center">Featured Clients </h1>
+		<div class="bordered">
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="list_carousel">
+			<div class="carousel_nav">
+				<a class="prev" id="car_prev" href="#"><span>prev</span></a>
+				<a class="next" id="car_next" href="#"><span>next</span></a>
+			</div>
+			<div class="clearfix">
+			</div>
+			<ul id="recent-projects">
+				<!--box 1-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 2-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 3-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 4-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 5-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 6-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 7-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+				<!--box 8-->
+				<li>
+				<div class="featured-projects clientslogo">
+					<div class="featured-projects-image">
+						<a href="#"><img class="imgOpa grayimage" src="img/dummyimage.jpg" alt=""></a>
+					</div>
+				</div>
+				</li>
+			</ul>
+			<div class="clearfix">
+			</div>
+		</div>
+	</div>
+</div>
+</pre>
+
+<p>Call the script</p>
+<pre class="brush:css">
+	$(window).load(function(){			
+		$('#recent-projects').carouFredSel({
+		responsive: true,
+		items       : {
+        width       : 200,
+        height      : 295,
+        visible     : {
+            min         : 1,
+            max         : 4
+        }
+    },
+		width: '200px',
+		height: '295px',
+		auto: true,
+		circular	: true,
+		infinite	: false,
+		prev : {
+			button		: "#car_prev",
+			key			: "left",
+				},
+		next : {
+			button		: "#car_next",
+			key			: "right",
+					},
+		swipe: {
+			onMouse: true,
+			onTouch: true
+			},
+		scroll: {
+        easing: "",
+        duration: 1200
+    }
+	});
+		});
+
+</pre>
+
+<p class="info">More about Carousel List: http://caroufredsel.dev7studios.com/configuration.php </p>
+
+</section>	
+
+<section id="animations">
+<h3>Animations</h3><hr class="notop">
+Animations supported by this theme:
+https://daneden.me/animate/
+
+<p><b>How to use animations:</b></p>
+<p>Add the animation class to an existing class, in example let's add to col-md-6 class a fade up animation:</p>
+<pre class="brush:css">
+<div class="col-md-6 animated fadeInUp">fadeInUp</div>
+</pre>
+
+If you want a load effect:
+<pre class="brush:css">
+<div class="col-md-6 animated fadeInUpNow">fadeInUpNow</div>
+</pre>
+Load effects are available for fadeInUpNow, fadeInDownNow, fadeInLeftNow, fadeInRightNow, fadeInUpBigNow, FadeInDownBigNow, fadeInLeftBigNow, fadeInRightBigNow, slidea
+Please, see all available classes in style.css.
+<p class="info">It is not advisable to use the load effect for an element that appears on top of the page, the user will have to scroll down in order for that element to appear which is not quite nice</p>
+<p class="info"> To each animation add a "notransition" class. This will prevent the delay of the content on smaller devices.</p>
+
+Example:
+<pre class="brush:css">
+<div class="col-md-6 animated fadeInUpNow notransition">fadeInUpNow</div>
+</pre>
+
+
+</section>
+
+<section id="contact">
+	<h3>Contact Form</h3><hr class="notop">	
+	Find the following line in <b>contact.php</b> file (23 if you're using Notepad++ editor) and replace the existing e-mail address with your own. </p>	
+</section>
+<section id="sources_and_credits">
+	<h3>Sources and Credits</h3><hr class="notop"><p>
+	We&#39;ve used the following images, icons or other files as listed. We do not own any credits for it.</p>
+<ul>
+<li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+<li><a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a></li>
+<li><a href="http://caroufredsel.dev7studios.com/index.php">carouFredsel</a></li>
+<li><a href="http://caroufredsel.dev7studios.com/index.php">Quovolver</a></li>
+<li><a href="http://isotope.metafizzy.co/">Isotope</a></li>
+<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">Pretty Photo</a></li>
+<li><a href="https://github.com/aFarkas/html5shiv">HTML5 Shiv</a></li>
+<li><a href="http://http://www.fontsquirrel.com/">OpenSans</a></li>
+</ul>
+<hr>
+</section>
+
+
+
+<section id="support">
+<h3>Theme Support</h3><hr class="notop">
+<p>Our support service is guaranteed and we are dedicated to providing you with the best one. <br/>
+<a href="https://wowthemesnet.estreamdesk.com/tickets/new">Submit a ticket</a> and we will respond within 48 hours on business days, from Monday to Friday, 09.00-19.00, Europe Timezone. 
+<br/>Support does not include the addition of new functions or changes to the standard functionality.</p>
+</section> 
+
+<h5><i>Thank you for choosing our themes!</i></h5>,
+<a href="http://www.wowthemes.net/premium-themes-templates/">WowThemes.net</a> Team
+	</div>
+</body>
+</html>
