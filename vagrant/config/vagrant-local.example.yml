@@ -1,9 +1,5 @@
 # Your personal GitHub token
-<<<<<<< HEAD
-github_token: <token>
-=======
-github_token: aa5da7f9d0a00e1401b80780f44340af51207c7a 
->>>>>>> 4d37ae317d360bc19a9fb02ad0bfc41f541eb693
+github_token: 4d37ae317d360bc19a9fb02ad0bfc41f541eb693
 # Read more: https://github.com/blog/1509-personal-api-tokens
 # You can generate it here: https://github.com/settings/tokens
 
@@ -17,11 +13,7 @@ box_check_update: false
 machine_name: shy
 
 # Virtual machine IP
-<<<<<<< HEAD
 ip: 192.168.55.63
-=======
-ip: 192.168.46.49
->>>>>>> 4d37ae317d360bc19a9fb02ad0bfc41f541eb693
 
 # Virtual machine CPU cores number
 cpus: 1
