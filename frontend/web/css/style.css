@@ -57,6 +57,12 @@ body{font-family: sans-serif;background-color: #888;-webkit-font-smoothing: anti
 .about-title{font-size: 1.6em; margin-top: 8%; font-weight: 600;}
 #about ul li{margin: 10px 0;}
 #about ul{margin-left: 20px;}
+#cooperation{background-color: #f8f9fa; padding-bottom: 3rem; padding-top: 3rem;}
+#cooperation ul li{margin: 10px 0;}
+#cooperation ul{margin-left: 20px;}
+#organizationGoal{padding: 50px 0;}
+#organizationGoal ul li{margin: 10px 0;}
+#organizationGoal ul{margin-left: 20px;}
 /* ------- Testimonials Section -----*/
 #testimonials{margin: 100px 0;}
 .testimonials{border-left: 3px solid #1723b1; margin: 50px 0;}

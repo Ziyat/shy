@@ -40,19 +40,19 @@ AppAsset::register($this);
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#top">Главная <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#cooperation">Сотрудничество</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#organizationGoal">Цель организации</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                    <a class="nav-link" href="#about">О Нас</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -71,10 +71,11 @@ AppAsset::register($this);
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="col-md-4 footer-box">
-                <p id="contact"><b>OUR OFFICE</b></p>
-                <p><i class="fa fa-map-marker"></i>Holloway Road, London</p>
-                <p><i class="fa fa-phone"></i>+44 074 675 86 965</p>
-                <p><i class="fa fa-envelope-o"></i>info@examle.com</p>
+                <p id="contact"><b>Свяжитесь с нами</b></p>
+                <p><i class="fa fa-map-marker"></i>Уртачирчикский р-н,
+                    Ташкентской обл.</p>
+                <p><i class="fa fa-phone"></i><a class="text-white" href="tel:+998998915963">+998 (99) 891 5963</a></p>
+                <p><i class="fa fa-telegram"></i><a class="text-white" href="https://t.me/+998998915963">info@examle.com</a></p>
             </div>
             <div class="col-md-4 footer-box">
                 <p><b>SUBSCRIBE NEWSLETTER</b></p>
@@ -92,7 +93,7 @@ AppAsset::register($this);
                 </div>
             </div>
             <div class="col-md-6 ">
-                <p class="copyright">Copyright © 2019. All rights reserved | Designed by <a href="https://www.salvatoremandis.it/index-eng.html">Salvatore Mandis</a></p>
+                <p class="copyright">Copyright © 2019. All rights reserved | Created by <a href="https://madetec.uz">Madetec-Solution</a></p>
             </div>
             <div class="col-md-6 text-right">
                 <p class="copyright">
