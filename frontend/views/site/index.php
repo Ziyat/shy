@@ -8,11 +8,9 @@ $this->title = 'Fatam.uz';
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="promo-title">Your Digital Agency</p>
-                <p class="join-title">Join Us! We Will Let Grown Your Business Faster</p>
-                <a href="#" class="link-play">
-                    <img src="svg/play.svg" alt="" class="play-btn">Watch Tutorials
-                </a>
+                <p class="promo-title">Сетевая организация "SHUXRAT YOG'DUSI"</p>
+                <p class="join-title">занимается рекламой товаров малых
+                    предприятий Республики Узбекистан.</p>
             </div>
             <div class="col-md-6">
                 <img src="svg/undraw_email_campaign_qa8y.svg" alt="" class="img-fluid">
