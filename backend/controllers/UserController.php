@@ -34,8 +34,8 @@ class UserController extends CommonController
     )
     {
         $this->manage = $userManageService;
-        $this->cache = Yii::$app->cache;
-        $this->dependency = new \yii\caching\DbDependency(['sql' => 'SELECT MAX(updated_at) FROM ' . User::tableName()]);
+//        $this->cache = Yii::$app->cache;
+//        $this->dependency = new \yii\caching\DbDependency(['sql' => 'SELECT MAX(updated_at) FROM ' . User::tableName()]);
         parent::__construct($id, $module, $readRepository, $config);
     }
 
