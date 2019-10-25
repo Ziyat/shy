@@ -11,7 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'language' => ['ru','uz'],
+    'language' => ['uz', 'ru'],
     'components' => [
         'i18n' => [
             'translations' => [
@@ -48,7 +48,7 @@ return [
 
         'urlManager' => [
             'class' => 'codemix\localeurls\UrlManager',
-            'languages' => ['ru', 'uz'],
+            'languages' => ['uz','ru'],
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
