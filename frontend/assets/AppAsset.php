@@ -13,12 +13,12 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/style.css',
-        '/css/bootstrap.min.css',
-        '/js/jquery-3.3.1.slim.min.js',
-        '/js/bootstrap.min.js',
-        '/css/font-awesome.min.css',
+        'css/bootstrap.min.css',
+        'css/font-awesome.min.css',
     ];
     public $js = [
+        'js/jquery-3.3.1.slim.min.js',
+        'js/bootstrap.min.js',
     ];
     public $depends = [
     ];
