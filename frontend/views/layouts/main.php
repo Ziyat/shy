@@ -6,6 +6,7 @@
 
 use frontend\assets\AppAsset;
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 ?>
@@ -40,9 +41,11 @@ AppAsset::register($this);
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><?= Yii::t('nav','lang') ?> <b class="caret"></b></a>
-                    <li><a href="<?= \yii\helpers\Url::to('/ru')?>"><?= Yii::t('nav','russian') ?></a></li>
-                    <li><a href="<?= \yii\helpers\Url::to('/uz')?>"><?= Yii::t('nav','uzbek') ?></a></li>
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><?= Yii::t('nav','lang') ?></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="<?= Url::to('/ru')?>"><?= Yii::t('nav','russian') ?></a>
+                        <a class="dropdown-item" href="<?= Url::to('/uz')?>"><?= Yii::t('nav','uzbek') ?></a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#top"><?= Yii::t('nav','home') ?> <span class="sr-only">(current)</span></a>
