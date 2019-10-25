@@ -101,17 +101,16 @@ body{font-family: sans-serif;background-color: #888;-webkit-font-smoothing: anti
 .copyright a{text-decoration: none;color: #fff;}
 .copyright a:hover{text-decoration: none;color: #1723b1;}
 .dropdown-menu{
-  background: none;
-  color: #fff;
-  text-align: right;
-  border-color: #fff;
-  padding: 5px;
-  border: none;
+  background: none !important;
+  color: #fff !important;
+  text-align: right !important;
+  padding: 5px !important;
+  border: none #fff !important;
 }
 .dropdown-item:focus, .dropdown-item:hover{
-  color: #ffffff;
-  text-decoration: none;
-  background: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  background: none !important;
 }
 .dropdown-item{
   color: #fff;
