@@ -39,20 +39,25 @@ AppAsset::register($this);
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#top">Главная <span class="sr-only">(current)</span></a>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><?= Yii::t('nav','lang') ?> <b class="caret"></b></a>
+                    <li><a href="<?= \yii\helpers\Url::to('/ru')?>"><?= Yii::t('nav','russian') ?></a></li>
+                    <li><a href="<?= \yii\helpers\Url::to('/uz')?>"><?= Yii::t('nav','uzbek') ?></a></li>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#cooperation">Сотрудничество</a>
+                    <a class="nav-link" href="#top"><?= Yii::t('nav','home') ?> <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#organizationGoal">Цель организации</a>
+                    <a class="nav-link" href="#cooperation"><?= Yii::t('nav','cooperation') ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">О Нас</a>
+                    <a class="nav-link" href="#organizationGoal"><?= Yii::t('nav','organizationGoal') ?></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Контакты</a>
+                    <a class="nav-link" href="#about"><?= Yii::t('nav','about') ?></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><?= Yii::t('nav','contact') ?></a>
                 </li>
             </ul>
         </div>
@@ -71,7 +76,7 @@ AppAsset::register($this);
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="col-md-4 footer-box">
-                <p id="contact"><b>Свяжитесь с нами</b></p>
+                <p id="contact"><b><?= Yii::t('nav','contact') ?></b></p>
                 <p><i class="fa fa-map-marker"></i>Уртачирчикский р-н,
                     Ташкентской обл.</p>
                 <p><i class="fa fa-phone"></i><a class="text-white" href="tel:+998998915963">+998 (99) 891 5963</a></p>
