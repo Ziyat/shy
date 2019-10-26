@@ -10,13 +10,15 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'uz',
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'i18n' => [
             'translations' => [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@frontend/messages'
+                    'basePath' => '@frontend/messages',
+                    'sourceLanguage' => 'uz'
                 ],
             ],
         ],
