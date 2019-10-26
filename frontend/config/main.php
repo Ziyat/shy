@@ -17,8 +17,7 @@ return [
             'translations' => [
                 '*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@frontend/messages',
-                    'sourceLanguage' => 'uz'
+                    'basePath' => '@frontend/messages'
                 ],
             ],
         ],
