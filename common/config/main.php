@@ -1,7 +1,7 @@
 <?php
 return [
     'name' => 'fatam.uz',
-    'language' => 'ru',
+    'language' => 'uz',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
